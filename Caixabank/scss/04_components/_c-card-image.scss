@@ -1,0 +1,9 @@
+.c-card-image {
+    display: flex;
+    justify-content: center;
+
+    &--big {
+        width: 500px;
+        height: auto;
+    }
+}

@@ -1,0 +1,49 @@
+$paddings-sizes: (0px, 2px, 4px, 6px, 8px, 10px, 12px, 16px, 20px, 24px, 32px);
+
+$index: 0;
+@each $paddings-size in $paddings-sizes {
+    .g--padding-#{$index} {
+        padding: $paddings-size;
+    }
+
+    $index: $index+1;
+}
+
+
+$index: 0;
+@each $paddings-size in $paddings-sizes {
+    .g--padding-vertical-#{$index} {
+        padding-top: $paddings-size;
+        padding-bottom: $paddings-size;
+    }
+
+    $index: $index+1;
+}
+
+$index: 0;
+@each $paddings-size in $paddings-sizes {
+    .g--padding-horizontal-#{$index} {
+        padding-left: $paddings-size;
+        padding-right: $paddings-size;
+    }
+
+    $index: $index+1;
+}
+
+$index: 0;
+@each $paddings-size in $paddings-sizes {
+    .g--padding-left-#{$index} {
+        padding-left: $paddings-size;
+    }
+
+    $index: $index+1;
+}
+
+$index: 0;
+@each $paddings-size in $paddings-sizes {
+    .g--padding-right-#{$index} {
+        padding-right: $paddings-size;
+    }
+
+    $index: $index+1;
+}

@@ -1,0 +1,290 @@
+:root {
+  --color-primary: #D9ECF3;
+  --color-secondary: #007EAE;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-shadow: #EEEEEE;
+  --color-background: #E5F5FC;
+  --color-text-secondary: #7A6666;
+}
+
+.l-background {
+  --color-back: var(--color-white);
+  background-color: var(--color-back);
+}
+
+.l-background--modify {
+  --color-back: var(--color-background);
+  padding: 50px 0px 15px 0px;
+}
+
+.l-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  width: 0px;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.l-colums--padding {
+  padding: 0px 0px 0px 0px;
+}
+
+.l-columns--title {
+  grid-column: span 4;
+  width: 700px;
+  text-align: center;
+  padding-left: 230px;
+}
+
+.l-columns--2 {
+  grid-column: span 2;
+}
+
+.l-colums--3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 200px 0px 200px;
+}
+
+.l-columns--4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.l-columns--4-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.l-head {
+  display: flex;
+  justify-content: center;
+}
+
+.c-banner {
+  display: flex;
+  align-items: center;
+  background-image: url("../Proyecto_Caixabank/Imagenes/Terrat-abrir-cuenta_VF_1920x480.jpg");
+  height: 400px;
+}
+
+.c-button {
+  --c-button-strong-color: var(--color-primary);
+  --c-button-weak-color: var(--color-secondary);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 28px 14px 28px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  border-color: var(--c-button-strong-color);
+  background-color: var(--c-button-strong-color);
+  color: var(--c-button-weak-color);
+}
+
+.c-button--more {
+  --c-button-strong-color: var(--color-secondary);
+  --c-button-weak-color: var(--color-primary);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--c-button-strong-color);
+}
+
+.c-card-image {
+  display: flex;
+  justify-content: center;
+}
+
+.c-card-img--big {
+  width: 500px;
+  height: auto;
+}
+
+.c-card {
+  --color-background-shadow: var(--color-shadow);
+  display: flex;
+  box-shadow: 1px 1px 5px 1px var(--color-background-shadow);
+  border-radius: 5px;
+  width: 550px;
+  margin: 15px 15px 15px 15px;
+}
+
+.c-card--vertical {
+  box-shadow: none;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-card--main {
+  background-color: #eff8fb;
+  padding: 120px 100px 100px 100px;
+  width: 550px;
+}
+
+.c-card--small {
+  background-color: #ffffff;
+  padding: 20px 80px 20px 10px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #333333;
+}
+
+.c-card:hover {
+  cursor: pointer;
+}
+
+.c-card--colspan {
+  padding-right: 580px;
+}
+
+.c-card__button {
+  --color-strong: var(--color-primary);
+  --color-weak: var(--color-secondary);
+  background-color: var(--color-strong);
+  color: var(--color-weak);
+  margin: 20px 0px 0px 0px;
+  padding: 5px;
+  border-radius: 10px 10px 10px 10px;
+  border-style: none;
+}
+
+.c-card__button:hover {
+  cursor: pointer;
+}
+
+.c-card__button--modify {
+  --color-weak: var(--color-secondary);
+  --color-strong: var(--color-background);
+  width: 140px;
+  font-weight: normal;
+  margin: 0px 0px 25px 0px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.c-card__button--modify:hover {
+  cursor: pointer;
+}
+
+.c-card__image {
+  margin: 20px 20px 20px 20px;
+  border-radius: 5px;
+}
+
+.c-card__text {
+  width: 250px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.c-card__text--colspan {
+  width: 500px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.c-card__text--modify {
+  --color-text: var(--color-text-secondary);
+  color: var(--color-text);
+  width: 140px;
+  font-weight: normal;
+  font-size: 17px;
+  text-align: center;
+}
+
+.c-card__image--modify {
+  margin: 0px;
+  border-radius: 0px;
+  text-align: center;
+}
+
+.c-card__title--modify {
+  width: 140px;
+  font-weight: bold;
+  margin: 15px 0px 0px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.c-card--modify {
+  display: flex;
+  width: 225px;
+  margin: 15px 15px 15px 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c-link {
+  --color-link: var(--color-secondary);
+  color: var(--color-link);
+  display: flex;
+  justify-content: center;
+}
+
+.c-logo {
+  width: 200px;
+  height: auto;
+}
+
+.c-needs {
+  padding-top: 30px;
+}
+
+.c-subtitle {
+  --c-title-color: var(--color-black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--c-title-color);
+  text-align: center;
+}
+
+.c-subtitle--litle {
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.c-subtitle--center {
+  text-align: center;
+}
+
+.c-text {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.c-text--bold {
+  --c-title-color: var(--color-black);
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--c-title-color);
+  font-weight: bold;
+}
+
+.c-title {
+  --c-title-color: var(--color-black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--c-title-color);
+}
+
+* {
+  font-family: sans-serif;
+}

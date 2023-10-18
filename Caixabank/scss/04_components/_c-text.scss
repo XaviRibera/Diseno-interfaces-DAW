@@ -1,0 +1,13 @@
+.c-text {
+    text-align: center;
+    margin-top: 1px;
+
+    &--bold{
+        --c-title-color: var(--color-black);
+    
+        font-family: sans-serif;
+        font-size: 16px;
+        color: var(--c-title-color);
+        font-weight: bold;
+    }
+}

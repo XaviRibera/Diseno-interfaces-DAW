@@ -1,0 +1,37 @@
+.c-button {
+
+    --c-button-strong-color: var(--color-primary);
+    --c-button-weak-color: var(--color-secondary);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 28px 14px 28px;
+
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    border-color: var(--c-button-strong-color);
+    background-color: var(--c-button-strong-color);
+    color: var(--c-button-weak-color);
+
+    &--more{
+
+        --c-button-strong-color: var(--color-secondary);
+        --c-button-weak-color: var(--color-primary);
+    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        
+    
+        color: var(--c-button-strong-color);
+    
+    }
+}
+
+

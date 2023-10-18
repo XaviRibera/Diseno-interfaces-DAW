@@ -1,0 +1,10 @@
+.l-background {
+    --color-back: var(--color-white);
+
+    background-color: var(--color-back);
+}
+
+.l-background--modify {
+    --color-back: var(--color-background);
+    padding: 50px 0px 15px 0px;
+}

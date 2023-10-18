@@ -1,0 +1,129 @@
+.c-card {
+    --color-background-shadow: var(--color-shadow);
+
+    display: flex;
+    box-shadow: 1px 1px 5px 1px var(--color-background-shadow);
+    border-radius: 5px;
+    width: 550px;
+    margin: 15px 15px 15px 15px;
+
+    &--vertical {
+        box-shadow: none;
+        width: 250px;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--main{
+        background-color: #eff8fb;
+        padding: 120px 100px 100px 100px;
+        width: 550px;
+    }
+
+    &--small{
+
+        background-color: #ffffff;
+        padding: 20px 80px 20px 10px;
+        height: 50px;
+        width: 150px;
+        
+        display: flex;
+    
+        border-radius: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #333333;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--colspan {
+        padding-right: 580px;
+    }
+
+    &__button {
+        --color-strong: var(--color-primary);
+        --color-weak: var(--color-secondary);
+    
+        background-color: var(--color-strong);
+        color: var(--color-weak);
+        margin: 20px 0px 0px 0px;
+        padding: 5px;
+        border-radius: 10px 10px 10px 10px;
+        border-style: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--modify {
+            --color-weak: var(--color-secondary);
+            --color-strong: var(--color-background);
+        
+            width: 140px;
+            font-weight: normal;
+            margin: 0px 0px 25px 0px;
+            font-size: 15px;
+            text-align: center;
+            text-decoration: underline;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__image {
+        margin: 20px 20px 20px 20px;
+        border-radius: 5px;
+
+        &--modify {
+            margin: 0px;
+            border-radius: 0px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        width: 250px;
+        font-weight: bold;
+        font-size: 20px;
+
+        &--colspan {
+            width: 500px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        &--modify {
+            --color-text: var(--color-text-secondary);
+        
+            color: var(--color-text);
+            width: 140px;
+            font-weight: normal;
+            font-size: 17px;
+            text-align: center;
+        }
+    }
+
+    &__title{
+        &--modify {
+            width: 140px;
+            font-weight: bold;
+            margin: 15px 0px 0px 0px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    &--modify {
+        display: flex;
+        width: 225px;
+        margin: 15px 15px 15px 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
