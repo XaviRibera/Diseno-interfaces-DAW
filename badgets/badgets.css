@@ -1,0 +1,87 @@
+:root{
+    --color-primary: #0D6EFD;
+    --color-secondary: #6C757D;
+    --color-succes: #198754;
+    --color-danger: #DC3545;
+    --color-warning: #FFC107;
+    --color-info: #0DCAF0;
+    --color-light: #F8F9FA;
+    --color-dark: #212529;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+}
+
+/*-------------------------------------------------------------------------*/
+/*                                  Badget                                 */
+/*-------------------------------------------------------------------------*/
+
+.c-badget{
+    --c-badget-background-color: var(--color-primary);
+    --c-badget-color: var(--color-white);
+
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    border-radius: 20px;
+    border-style: solid;
+    padding: 6px;
+
+    background-color: var(--c-badget-background-color);
+    color: var(--c-badget-color);
+    border-color: var(--c-badget-background-color);
+}
+
+.c-badget--secondary{
+    --c-badget-background-color: var(--color-secondary);
+}
+
+.c-badget--succes{
+    --c-badget-background-color: var(--color-succes);
+}
+
+.c-badget--danger{
+    --c-badget-background-color: var(--color-danger);
+}
+
+.c-badget--warning{
+    --c-badget-background-color: var(--color-warning);
+    --c-badget-color: var(--color-black);
+}
+
+.c-badget--info{
+    --c-badget-background-color: var(--color-info);
+    --c-badget-color: var(--color-black);
+}
+
+.c-badget--light{
+    --c-badget-background-color: var(--color-light);
+    --c-badget-color: var(--color-black);
+}
+
+.c-badget--dark{
+    --c-badget-background-color: var(--color-dark);
+}
+
+/*-------------------------------------------------------------------------*/
+/*                         Badget__notification                            */
+/*-------------------------------------------------------------------------*/
+
+.c-badget__notification{
+    --c-badget-background-color: var(--color-danger);
+    --c-badget-color: var(--color-light-letter);
+
+    border-radius: 100px;
+    border-style: solid;
+    padding: 2px;
+    padding-right: 8px;
+    padding-left: 6px;
+
+    background-color: var(--c-badget-background-color);
+    border-color: var(--c-badget-background-color);
+}
+
+.c-badget__notification--danger{
+    --c-badget-background-color: var(--color-succes);
+}
