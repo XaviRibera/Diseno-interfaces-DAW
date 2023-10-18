@@ -1,0 +1,58 @@
+:root{
+    --color-contrast-background: #E5F5FC;
+    --color-background: #FFFFFF;
+    
+    --h2-title-font-size: 32px;
+    --h3-title-font-size: 24px;
+    --p-text-font-size: 16px;
+}
+
+    .c-bg-blue.double-curved::before{
+        height: 100px; /* Ajusta la altura de la curva según tus preferencias */
+        background-color: var(--color-background); /* Color del fondo */
+        border-radius: 0 0 50% 50% / 0 0 100% 100%; /* Crea una forma curva */
+        z-index: -1;
+    }
+    .c-blockCenter{
+        --c-section-background-color: var(--color-contrast-background);
+
+        --c-section-font-size:var(--p-text-font-size);
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        font-size: var(--p-text-font-size);
+
+        background-color: var(--c-section-background-color);
+    }
+
+    .c-title{
+        padding-top: 60px;
+        text-align: center;
+        font-size: var(--h2-title-font-size);
+    }
+
+    .c-cards-bank-accounts{
+        margin-top: 4rem;
+        width: 21%;
+        height: auto;
+        
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .c-cards-bank-accounts__title{
+        font-size: var(--h3-title-font-size);
+        
+    }
+
+    .c-cards-bank-account__text-link{
+        color:#007eae;
+    }
+
+    .l-columns--4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
