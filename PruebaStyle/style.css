@@ -1,0 +1,33 @@
+.g--size100{
+    width: 100px;
+    height: 100px;
+}
+
+.g--size200{
+    width: 200px;
+    height: 200px;
+}
+
+.g--border-blue{
+    border: 1px blue solid;
+}
+
+.g--display-in-line{
+    display: inline;
+}
+
+.g--display-block{
+    display: block;
+}
+
+.g--display-in-line-block{
+    display: inline-block;
+}
+
+.g--color-red{
+    color: red;
+}
+
+.g--font-verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
