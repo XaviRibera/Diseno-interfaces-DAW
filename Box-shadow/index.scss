@@ -1,0 +1,29 @@
+.c-body {
+    background-color: lightgrey;
+    display: grid;
+    justify-items: center;
+}
+
+.c-box {
+    margin: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+
+$box-shadows: (
+    0 1px 3px hsla(0,0%,0.2),
+    0 4px 6px hsla(0,0%,0.2),
+    0 5px 15px hsla(0,0%,0.2),
+    0 10px 24px hsla(0,0%,0.2),
+    0 15px 35px hsla(0,0%,0.2)
+);
+
+@for $i from 1 through length($box-shadows) {
+    $box-shadow: nth($box-shadows, $i);
+    .g--box-shadow-#{$i} {
+        @include box-shadow($box-shadow);
+    }
+};
