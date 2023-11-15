@@ -1,0 +1,27 @@
+$colors: (
+    "principal" : (#EEE6FE, #C9B8F5, #A490E4, #7C67D0, #5340BF, #3B2F98, #221C73, #0C0A47, #010119),
+    "alternativo" : (#EAFEE6, #C4F5B8, #A5E490, #85D067, #6ABF40, #55982F, #40731C, #26470A, #0D1901),
+    "grises" : (#FFFFFF, #F3DCD8, #D6BFBD, #B5ACAB, #949494, #827473, #754B48, #692920, #500F02),
+    "blancos" : (#FFFFFF, #FEFBFB, #FBF9F9, #F8F7F7, #F5F5F5, #F3F2F1, #F3EDEC, #F7E6E4, #FEDED7),
+    "rojos" : (#FFFFFF, #FDDDD8, #FBB8B1, #F8918C, #F56666, #F3453F, #F32916, #D72109, #B32205),
+    "verdes" : (#F0FFF9, #C1F6DE, #96E3BD, #72CF9E, #49BC78, #34985A, #1E713A, #0B4B1F, #011907),
+    "azules" : (#FFFFFF, #C8DAFE, #8FBAFE, #579DFF, #1F87FF, #0073E6, #015FAD, #024474, #02263C),
+    "amarillos" : (#FFFFFF, #FCF8CF, #F7ECA6, #F2DD78, #ECC94B, #E9B51C, #C69010,#9A6A09, #6D4503)
+);
+
+:root{
+    @each $key,$value in $colors {
+        @for $i from 1 through length($value) {
+            $RGBcolor: nth($value,$i);
+            --color-#{$key}-#{$i} : #{$RGBcolor};
+        };
+    }
+}
+
+@each $key,$value in $colors {
+    @for $i from 1 through length($value) {
+        .g--color-#{$key}-#{$i} {
+            color: var(--color-#{$key}-#{$i});
+        }
+    };
+}
