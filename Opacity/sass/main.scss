@@ -1,0 +1,41 @@
+$utilities: (
+    "opacity": (
+        property: opacity,
+        class: g--opacity,
+        values: (
+            1: 0,
+            2: .25,
+            "": .35,
+            3: .5,
+            4: .75,
+            5: 1
+        )
+    ),
+    "box-shadow": (
+        property: box-shadow,
+        class: g--box-shadow,
+        values: (
+            none: none,
+            "": 0 0px 2px hsla(0,0%,0.2),
+            1: 0 1px 3px hsla(0,0%,0.2),
+            2: 0 4px 6px hsla(0,0%,0.2),
+            3: 0 5px 15px hsla(0,0%,0.2),
+            4: 0 10px 24px hsla(0,0%,0.2),
+            5: 0 15px 35px hsla(0,0%,0.2)
+        )
+    )
+);
+
+@each $keyUtility, $valueUtility in $utilities{
+    @each $key, $value in map-get($valueUtility, "values") {
+
+        $separator: "-";
+        @if $key==""{
+            $separator:"";
+        }
+
+        .#{map-get($valueUtility, "class")}#{$separator}#{$key}{
+            #{map-get($valueUtility, "property")}:#{$value};
+        }
+    }
+}
