@@ -1,0 +1,14 @@
+@each $component, $maps in $colores-componentes {
+    :root{
+    @each $key, $values in $maps {
+        $indice : 1;
+        @if($modo_oscuro == false){
+            $indice : 2;
+        }
+        $color : nth($values,$indice);
+        
+            --color-#{$key}-#{$component}: #{$color};
+        
+    }
+    }
+}

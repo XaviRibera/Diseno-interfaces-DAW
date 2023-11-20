@@ -1,0 +1,13 @@
+:root{
+    @each $key,$values in map-get($set-colores,"colores"){
+      @for $i from 1 through 5{
+      $name : nth(map-get($set-colores,"nombre-colores"),$i);
+      $separator : "-";
+      @if($name == ""){
+        $separator:"";
+      }
+      $color : nth($values,$i);
+      --color-#{$key}#{$separator}#{$name}: #{$color};
+      }
+    }
+}

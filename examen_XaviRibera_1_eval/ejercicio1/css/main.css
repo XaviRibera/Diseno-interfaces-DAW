@@ -1,0 +1,15 @@
+.c-menu {
+  display: flex;
+  width: 100vem;
+}
+.c-menu__item {
+  margin-left: 0px;
+}
+.c-menu__item--right {
+  margin-left: none;
+  margin-right: 0px;
+}
+.c-menu__item--center {
+  margin-left: auto;
+  margin-right: auto;
+}/*# sourceMappingURL=main.css.map */

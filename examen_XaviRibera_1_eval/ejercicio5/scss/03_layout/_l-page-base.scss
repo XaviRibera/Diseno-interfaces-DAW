@@ -1,0 +1,31 @@
+.l-page-base{
+
+    display: grid;
+    grid-template-areas:
+            "header header header header header"
+            "nav pageContent pageContent pageContent pageContent"
+            "footer footer footer footer footer";
+
+    &--switch{
+        grid-template-areas:
+            "header header header header header"
+            "pageContent pageContent pageContent pageContent nav"
+            "footer footer footer footer footer";
+    }
+
+    &__header{
+        grid-area: header;
+    }
+
+    &__nav{
+        grid-area: nav;
+    }
+
+    &__content{
+        grid-area: pageContent;
+    }
+
+    &__footer{
+        grid-area: footer;
+    }
+}
