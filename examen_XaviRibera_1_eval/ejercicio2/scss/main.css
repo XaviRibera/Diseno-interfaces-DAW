@@ -1,0 +1,19 @@
+:root {
+  --color-texto-boton: #000000;
+  --color-fondo-boton: #E6EDFE;
+  --color-borde-boton: #0056b8;
+}
+
+:root {
+  --color-fondo-pagina: #000000;
+}
+
+.c-button {
+  color: var(--color-texto-boton);
+  background-color: var(--color-fondo-boton);
+  border-color: var(--color-borde-boton);
+}
+
+.c-body {
+  background-color: var(--color-fondo-pagina);
+}/*# sourceMappingURL=main.css.map */

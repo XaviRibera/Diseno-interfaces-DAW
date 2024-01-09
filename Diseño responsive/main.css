@@ -1,0 +1,56 @@
+@media (min-width: 0px) {
+  .g--color-red {
+    color: red;
+  }
+  .g--color-blue {
+    color: blue;
+  }
+  .g--color-green {
+    color: green;
+  }
+  .g--color-orange {
+    color: orange;
+  }
+}
+@media (min-width: 576px) {
+  .g--color-red\@mobile {
+    color: red;
+  }
+  .g--color-blue\@mobile {
+    color: blue;
+  }
+  .g--color-green\@mobile {
+    color: green;
+  }
+  .g--color-orange\@mobile {
+    color: orange;
+  }
+}
+@media (min-width: 768px) {
+  .g--color-red\@tablet {
+    color: red;
+  }
+  .g--color-blue\@tablet {
+    color: blue;
+  }
+  .g--color-green\@tablet {
+    color: green;
+  }
+  .g--color-orange\@tablet {
+    color: orange;
+  }
+}
+@media (min-width: 992px) {
+  .g--color-red\@desktop {
+    color: red;
+  }
+  .g--color-blue\@desktop {
+    color: blue;
+  }
+  .g--color-green\@desktop {
+    color: green;
+  }
+  .g--color-orange\@desktop {
+    color: orange;
+  }
+}/*# sourceMappingURL=main.css.map */

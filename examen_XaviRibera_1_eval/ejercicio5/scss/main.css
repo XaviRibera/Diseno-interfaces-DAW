@@ -1,0 +1,19 @@
+.l-page-base {
+  display: grid;
+  grid-template-areas: "header header header header header" "nav pageContent pageContent pageContent pageContent" "footer footer footer footer footer";
+}
+.l-page-base--switch {
+  grid-template-areas: "header header header header header" "pageContent pageContent pageContent pageContent nav" "footer footer footer footer footer";
+}
+.l-page-base__header {
+  grid-area: header;
+}
+.l-page-base__nav {
+  grid-area: nav;
+}
+.l-page-base__content {
+  grid-area: pageContent;
+}
+.l-page-base__footer {
+  grid-area: footer;
+}/*# sourceMappingURL=main.css.map */

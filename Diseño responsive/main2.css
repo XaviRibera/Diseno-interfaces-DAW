@@ -1,0 +1,119 @@
+.g--font-size-1 {
+    font-size: 40px;
+}
+.g--font-size-2 {
+    font-size: 50px;
+}
+.g--font-size-3 {
+    font-size: 55px;
+}
+.g--font-size-4 {
+    font-size: 70px;
+}
+  
+@media (min-width: 576px) {
+    .g--font-size-1\@movil {
+        font-size: 40px;
+    }
+    .g--font-size-2\@movil {
+        font-size: 50px;
+    }
+    .g--font-size-3\@movil {
+        font-size: 55px;
+    }
+    .g--font-size-4\@movil {
+        font-size: 70px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .g--font-size-1\@tablet {
+        font-size: 40px;
+    }
+    .g--font-size-2\@tablet {
+        font-size: 50px;
+    }
+    .g--font-size-3\@tablet {
+        font-size: 55px;
+    }
+    .g--font-size-4\@tablet {
+        font-size: 70px;
+    }
+}
+  
+@media (min-width: 992px) {
+    .g--font-size-1\@desktop {
+        font-size: 40px;
+    }
+    .g--font-size-2\@desktop {
+        font-size: 50px;
+    }
+    .g--font-size-3\@desktop {
+        font-size: 55px;
+    }
+    .g--font-size-4\@desktop {
+        font-size: 70px;
+    }
+}
+
+/*g--font-size-1 g--font-size-3@mobile g--font-size-2@tablet g--font-size-1@desktop*/
+
+.g--color-red{
+    color: red;
+}
+.g--color-green{
+    color: green;
+}
+.g--color-blue{
+    color: blue;
+}
+.g--color-orange{
+    color: orange;
+}
+
+@media (min-width: 576px) {
+    .g--color-red\@mobile{
+        color: red;
+    }
+    .g--color-green\@mobile{
+        color: green;
+    }
+    .g--color-blue\@mobile{
+        color: blue;
+    }
+    .g--color-orange\@mobile{
+        color: orange;
+    }
+}
+
+@media (min-width: 768px) {
+    .g--color-red\@tablet{
+        color: red;
+    }
+    .g--color-green\@tablet{
+        color: green;
+    }
+    .g--color-blue\@tablet{
+        color: blue;
+    }
+    .g--color-orange\@tablet{
+        color: orange;
+    }
+}
+
+@media (min-width: 992px) {
+    .g--color-red\@desktop{
+        color: red;
+    }
+    .g--color-green\@desktop{
+        color: green;
+    }
+    .g--color-blue\@desktop{
+        color: blue;
+    }
+    .g--color-orange\@desktop{
+        color: orange;
+    }
+}
+
+/*g--color-orange g--color-blue@mobile g--color-red@tablet g--color-green@desktop*/

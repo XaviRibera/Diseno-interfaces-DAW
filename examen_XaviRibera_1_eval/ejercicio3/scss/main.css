@@ -1,0 +1,77 @@
+:root {
+  --color-azul-muy-claro: #90B0E4;
+  --color-azul-claro: #6793D0;
+  --color-azul: #407BBF;
+  --color-azul-oscuro: #2F6398;
+  --color-azul-muy-oscuro: #1C4C73;
+  --color-morado-muy-claro: #E490E1;
+  --color-morado-claro: #D067D0;
+  --color-morado: #B940BF;
+  --color-morado-oscuro: #8F2F98;
+  --color-morado-muy-oscuro: #671C73;
+  --color-verde-muy-claro: #90E4A0;
+  --color-verde-claro: #67D077;
+  --color-verde: #40BF4D;
+  --color-verde-oscuro: #2F9836;
+  --color-verde-muy-oscuro: #1C731D;
+}
+
+g--color-azul-muy-claro {
+  color: #90B0E4;
+}
+
+g--color-azul-claro {
+  color: #6793D0;
+}
+
+g--color-azul {
+  color: #407BBF;
+}
+
+g--color-azul-oscuro {
+  color: #2F6398;
+}
+
+g--color-azul-muy-oscuro {
+  color: #1C4C73;
+}
+
+g--color-morado-muy-claro {
+  color: #E490E1;
+}
+
+g--color-morado-claro {
+  color: #D067D0;
+}
+
+g--color-morado {
+  color: #B940BF;
+}
+
+g--color-morado-oscuro {
+  color: #8F2F98;
+}
+
+g--color-morado-muy-oscuro {
+  color: #671C73;
+}
+
+g--color-verde-muy-claro {
+  color: #90E4A0;
+}
+
+g--color-verde-claro {
+  color: #67D077;
+}
+
+g--color-verde {
+  color: #40BF4D;
+}
+
+g--color-verde-oscuro {
+  color: #2F9836;
+}
+
+g--color-verde-muy-oscuro {
+  color: #1C731D;
+}/*# sourceMappingURL=main.css.map */
