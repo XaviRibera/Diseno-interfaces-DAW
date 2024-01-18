@@ -1,0 +1,462 @@
+.c-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c-menu__date {
+  width: -moz-max-content;
+  width: max-content;
+}
+.c-menu__title {
+  font-size: 25px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.c-menu__exchange {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c-separator {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+.c-separator--vertical {
+  width: 1px;
+  height: 100%;
+}
+.c-separator--menu {
+  width: 100%;
+}
+
+.c-body {
+  align-items: center;
+  padding: auto;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.c-card {
+  display: grid;
+  padding: 10px;
+}
+.c-card__title {
+  grid-area: title;
+  font-size: x-large;
+  font-weight: bold;
+}
+.c-card__text {
+  grid-area: text;
+}
+.c-card__img {
+  grid-area: img;
+  margin: auto;
+  padding: 5px;
+}
+.c-card__img--more-small {
+  width: 100px;
+}
+.c-card__img--small {
+  width: 200px;
+}
+.c-card__img--big {
+  width: 300px;
+}
+@media (min-width: 0px) {
+  .c-card {
+    grid-template-areas: "title" "text" "img";
+  }
+  .c-card--template-1 {
+    grid-template-areas: "img" "title" "text";
+  }
+  .c-card--template-2 {
+    grid-template-areas: "title" "img" "text";
+  }
+  .c-card--template-3 {
+    grid-template-areas: "title title" "img text";
+  }
+  .c-card--template-4 {
+    grid-template-areas: "title title" "text img";
+  }
+  .c-card--horizontal {
+    grid-template-areas: "img title description";
+  }
+  .c-card--horizontal-template-1 {
+    grid-template-areas: "title text img";
+  }
+  .c-card--horizontal-template-2 {
+    grid-template-areas: "img title" "img text";
+  }
+}
+@media (min-width: 550px) {
+  .c-card\@phatblet {
+    grid-template-areas: "title" "text" "img";
+  }
+  .c-card--template-1\@phatblet {
+    grid-template-areas: "img" "title" "text";
+  }
+  .c-card--template-2\@phatblet {
+    grid-template-areas: "title" "img" "text";
+  }
+  .c-card--template-3\@phatblet {
+    grid-template-areas: "title title" "img text";
+  }
+  .c-card--template-4\@phatblet {
+    grid-template-areas: "title title" "text img";
+  }
+  .c-card--horizontal\@phatblet {
+    grid-template-areas: "img title description";
+  }
+  .c-card--horizontal-template-1\@phatblet {
+    grid-template-areas: "title text img";
+  }
+  .c-card--horizontal-template-2\@phatblet {
+    grid-template-areas: "img title" "img text";
+  }
+}
+@media (min-width: 750px) {
+  .c-card\@tablet {
+    grid-template-areas: "title" "text" "img";
+  }
+  .c-card--template-1\@tablet {
+    grid-template-areas: "img" "title" "text";
+  }
+  .c-card--template-2\@tablet {
+    grid-template-areas: "title" "img" "text";
+  }
+  .c-card--template-3\@tablet {
+    grid-template-areas: "title title" "img text";
+  }
+  .c-card--template-4\@tablet {
+    grid-template-areas: "title title" "text img";
+  }
+  .c-card--horizontal\@tablet {
+    grid-template-areas: "img title description";
+  }
+  .c-card--horizontal-template-1\@tablet {
+    grid-template-areas: "title text img";
+  }
+  .c-card--horizontal-template-2\@tablet {
+    grid-template-areas: "img title" "img text";
+  }
+}
+@media (min-width: 1000px) {
+  .c-card\@desktop {
+    grid-template-areas: "title" "text" "img";
+  }
+  .c-card--template-1\@desktop {
+    grid-template-areas: "img" "title" "text";
+  }
+  .c-card--template-2\@desktop {
+    grid-template-areas: "title" "img" "text";
+  }
+  .c-card--template-3\@desktop {
+    grid-template-areas: "title title" "img text";
+  }
+  .c-card--template-4\@desktop {
+    grid-template-areas: "title title" "text img";
+  }
+  .c-card--horizontal\@desktop {
+    grid-template-areas: "img title description";
+  }
+  .c-card--horizontal-template-1\@desktop {
+    grid-template-areas: "title text img";
+  }
+  .c-card--horizontal-template-2\@desktop {
+    grid-template-areas: "img title" "img text";
+  }
+}
+@media (min-width: 1200px) {
+  .c-card\@desktopHD {
+    grid-template-areas: "title" "text" "img";
+  }
+  .c-card--template-1\@desktopHD {
+    grid-template-areas: "img" "title" "text";
+  }
+  .c-card--template-2\@desktopHD {
+    grid-template-areas: "title" "img" "text";
+  }
+  .c-card--template-3\@desktopHD {
+    grid-template-areas: "title title" "img text";
+  }
+  .c-card--template-4\@desktopHD {
+    grid-template-areas: "title title" "text img";
+  }
+  .c-card--horizontal\@desktopHD {
+    grid-template-areas: "img title description";
+  }
+  .c-card--horizontal-template-1\@desktopHD {
+    grid-template-areas: "title text img";
+  }
+  .c-card--horizontal-template-2\@desktopHD {
+    grid-template-areas: "img title" "img text";
+  }
+}
+
+.l-box {
+  display: grid;
+}
+.l-box__a {
+  grid-area: a;
+}
+.l-box__b {
+  grid-area: b;
+}
+.l-box__c {
+  grid-area: c;
+}
+.l-box__separation {
+  grid-area: separation;
+}
+@media (min-width: 0px) {
+  .l-box {
+    grid-template-areas: "a b";
+  }
+  .l-box--ba {
+    grid-template-areas: "b a";
+  }
+  .l-box--a-b {
+    grid-template-areas: "a" "separation" "b";
+  }
+  .l-box--b-a {
+    grid-template-areas: "b" "a";
+  }
+  .l-box--abc {
+    grid-template-areas: "a b c";
+  }
+  .l-box--bca {
+    grid-template-areas: "b c a";
+  }
+  .l-box--cab {
+    grid-template-areas: "c a b";
+  }
+  .l-box--acb {
+    grid-template-areas: "a c b";
+  }
+  .l-box--cba {
+    grid-template-areas: "c b a";
+  }
+  .l-box--bac {
+    grid-template-areas: "b a c";
+  }
+  .l-box--a-b-c {
+    grid-template-areas: "a" "b" "c";
+  }
+  .l-box--b-c-a {
+    grid-template-areas: "b" "c" "a";
+  }
+  .l-box--c-a-b {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--a-c-b {
+    grid-template-areas: "a" "c" "b";
+  }
+  .l-box--c-b-a {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--b-a-c {
+    grid-template-areas: "b" "a" "c";
+  }
+}
+@media (min-width: 550px) {
+  .l-box\@phatblet {
+    grid-template-areas: "a b";
+  }
+  .l-box--ba\@phatblet {
+    grid-template-areas: "b a";
+  }
+  .l-box--a-b\@phatblet {
+    grid-template-areas: "a" "separation" "b";
+  }
+  .l-box--b-a\@phatblet {
+    grid-template-areas: "b" "a";
+  }
+  .l-box--abc\@phatblet {
+    grid-template-areas: "a b c";
+  }
+  .l-box--bca\@phatblet {
+    grid-template-areas: "b c a";
+  }
+  .l-box--cab\@phatblet {
+    grid-template-areas: "c a b";
+  }
+  .l-box--acb\@phatblet {
+    grid-template-areas: "a c b";
+  }
+  .l-box--cba\@phatblet {
+    grid-template-areas: "c b a";
+  }
+  .l-box--bac\@phatblet {
+    grid-template-areas: "b a c";
+  }
+  .l-box--a-b-c\@phatblet {
+    grid-template-areas: "a" "b" "c";
+  }
+  .l-box--b-c-a\@phatblet {
+    grid-template-areas: "b" "c" "a";
+  }
+  .l-box--c-a-b\@phatblet {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--a-c-b\@phatblet {
+    grid-template-areas: "a" "c" "b";
+  }
+  .l-box--c-b-a\@phatblet {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--b-a-c\@phatblet {
+    grid-template-areas: "b" "a" "c";
+  }
+}
+@media (min-width: 750px) {
+  .l-box\@tablet {
+    grid-template-areas: "a b";
+  }
+  .l-box--ba\@tablet {
+    grid-template-areas: "b a";
+  }
+  .l-box--a-b\@tablet {
+    grid-template-areas: "a" "separation" "b";
+  }
+  .l-box--b-a\@tablet {
+    grid-template-areas: "b" "a";
+  }
+  .l-box--abc\@tablet {
+    grid-template-areas: "a b c";
+  }
+  .l-box--bca\@tablet {
+    grid-template-areas: "b c a";
+  }
+  .l-box--cab\@tablet {
+    grid-template-areas: "c a b";
+  }
+  .l-box--acb\@tablet {
+    grid-template-areas: "a c b";
+  }
+  .l-box--cba\@tablet {
+    grid-template-areas: "c b a";
+  }
+  .l-box--bac\@tablet {
+    grid-template-areas: "b a c";
+  }
+  .l-box--a-b-c\@tablet {
+    grid-template-areas: "a" "b" "c";
+  }
+  .l-box--b-c-a\@tablet {
+    grid-template-areas: "b" "c" "a";
+  }
+  .l-box--c-a-b\@tablet {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--a-c-b\@tablet {
+    grid-template-areas: "a" "c" "b";
+  }
+  .l-box--c-b-a\@tablet {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--b-a-c\@tablet {
+    grid-template-areas: "b" "a" "c";
+  }
+}
+@media (min-width: 1000px) {
+  .l-box\@desktop {
+    grid-template-areas: "a b";
+  }
+  .l-box--ba\@desktop {
+    grid-template-areas: "b a";
+  }
+  .l-box--a-b\@desktop {
+    grid-template-areas: "a" "separation" "b";
+  }
+  .l-box--b-a\@desktop {
+    grid-template-areas: "b" "a";
+  }
+  .l-box--abc\@desktop {
+    grid-template-areas: "a b c";
+  }
+  .l-box--bca\@desktop {
+    grid-template-areas: "b c a";
+  }
+  .l-box--cab\@desktop {
+    grid-template-areas: "c a b";
+  }
+  .l-box--acb\@desktop {
+    grid-template-areas: "a c b";
+  }
+  .l-box--cba\@desktop {
+    grid-template-areas: "c b a";
+  }
+  .l-box--bac\@desktop {
+    grid-template-areas: "b a c";
+  }
+  .l-box--a-b-c\@desktop {
+    grid-template-areas: "a" "b" "c";
+  }
+  .l-box--b-c-a\@desktop {
+    grid-template-areas: "b" "c" "a";
+  }
+  .l-box--c-a-b\@desktop {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--a-c-b\@desktop {
+    grid-template-areas: "a" "c" "b";
+  }
+  .l-box--c-b-a\@desktop {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--b-a-c\@desktop {
+    grid-template-areas: "b" "a" "c";
+  }
+}
+@media (min-width: 1200px) {
+  .l-box\@desktopHD {
+    grid-template-areas: "a b";
+  }
+  .l-box--ba\@desktopHD {
+    grid-template-areas: "b a";
+  }
+  .l-box--a-b\@desktopHD {
+    grid-template-areas: "a" "separation" "b";
+  }
+  .l-box--b-a\@desktopHD {
+    grid-template-areas: "b" "a";
+  }
+  .l-box--abc\@desktopHD {
+    grid-template-areas: "a b c";
+  }
+  .l-box--bca\@desktopHD {
+    grid-template-areas: "b c a";
+  }
+  .l-box--cab\@desktopHD {
+    grid-template-areas: "c a b";
+  }
+  .l-box--acb\@desktopHD {
+    grid-template-areas: "a c b";
+  }
+  .l-box--cba\@desktopHD {
+    grid-template-areas: "c b a";
+  }
+  .l-box--bac\@desktopHD {
+    grid-template-areas: "b a c";
+  }
+  .l-box--a-b-c\@desktopHD {
+    grid-template-areas: "a" "b" "c";
+  }
+  .l-box--b-c-a\@desktopHD {
+    grid-template-areas: "b" "c" "a";
+  }
+  .l-box--c-a-b\@desktopHD {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--a-c-b\@desktopHD {
+    grid-template-areas: "a" "c" "b";
+  }
+  .l-box--c-b-a\@desktopHD {
+    grid-template-areas: "c" "b" "a";
+  }
+  .l-box--b-a-c\@desktopHD {
+    grid-template-areas: "b" "a" "c";
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,90 @@
+.c-card{
+
+    display: grid;
+    padding: 10px;
+
+    &__title{
+        grid-area: title;
+        font-size: x-large;
+        font-weight: bold;
+    }
+
+    &__text{
+        grid-area: text;
+    }
+
+    &__img{
+        grid-area: img;
+        margin: auto;
+        padding: 5px;
+
+        &--more-small{
+            width: 100px;
+        }
+
+        &--small{
+            width: 200px;
+        }
+
+        &--big{
+            width: 300px;
+        }
+    }
+
+    @each $breakpoint, $value in $breakpoints{
+        $separator: \@;
+        @if($breakpoint == ""){
+            $separator: "";
+        }
+        @media (min-width: $value) {
+            &#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "title"
+                    "text"
+                    "img";
+            }
+
+            &--template-1#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "img"
+                    "title"
+                    "text";
+            }
+
+            &--template-2#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "title"
+                    "img"
+                    "text";
+            }
+
+            &--template-3#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "title title"
+                    "img text";
+            }
+
+            &--template-4#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                "title title"
+                "text img";
+            }
+
+            &--horizontal#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "img title description";
+            }
+
+            &--horizontal-template-1#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "title text img";
+            }
+
+            &--horizontal-template-2#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "img title"
+                    "img text";
+            }
+        }
+    }
+}

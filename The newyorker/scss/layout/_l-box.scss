@@ -1,0 +1,123 @@
+.l-box{
+
+    display: grid;
+
+    &__a{
+        grid-area: a;
+    }
+
+    &__b{
+        grid-area: b;
+    }
+
+    &__c{
+        grid-area: c;
+    }
+
+    &__separation{
+        grid-area: separation;
+    }
+
+    @each $breakpoint, $value in $breakpoints{
+        $separator: \@;
+        @if($breakpoint == ""){
+            $separator: "";
+        }
+        @media (min-width: $value){
+            &#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a b";
+            }
+
+            &--ba#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b a";
+            }
+
+            &--a-b#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a"
+                    "separation"
+                    "b";
+            }
+
+            &--b-a#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b"
+                    "a";
+            }
+
+            &--abc#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a b c";
+            }
+
+            &--bca#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b c a";
+            }
+
+            &--cab#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "c a b";
+            }
+
+            &--acb#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a c b";
+            }
+
+            &--cba#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "c b a";
+            }
+
+            &--bac#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b a c";
+            }
+
+            &--a-b-c#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a"
+                    "b"
+                    "c";
+            }
+
+            &--b-c-a#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b"
+                    "c"
+                    "a";
+            }
+
+            &--c-a-b#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "c"
+                    "b"
+                    "a";
+            }
+
+            &--a-c-b#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "a"
+                    "c"
+                    "b";
+            }
+
+            &--c-b-a#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "c"
+                    "b"
+                    "a";
+            }
+
+            &--b-a-c#{$separator}#{$breakpoint}{
+                grid-template-areas:
+                    "b"
+                    "a"
+                    "c";
+            }
+        }
+    }
+}

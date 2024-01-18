@@ -1,0 +1,18 @@
+.c-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__date{
+        width: max-content;
+    }
+
+    &__title{
+        font-size: 25px;
+        width: max-content;
+    }
+
+    &__exchange{
+        width: max-content;
+    }
+}

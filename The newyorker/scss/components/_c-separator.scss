@@ -1,0 +1,15 @@
+.c-separator{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin: auto;
+
+    &--vertical{
+        width: 1px;
+        height: 100%;
+    }
+
+    &--menu{
+        width: 100%;
+    }
+}
